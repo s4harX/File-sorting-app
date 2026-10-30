@@ -1,0 +1,97 @@
+
+QMainWindow {
+    background-color: #111318;
+}
+
+/* Основные надписи */
+QLabel {
+    color: #E5E7EB;
+    font-size: 13px;
+    font-family: "Segoe UI";
+}
+
+/* Поле выбранной директории */
+QLineEdit {
+    background-color: #1B1E26;
+    color: #F1F5F9;
+    border: 1px solid #303541;
+    border-radius: 9px;
+    padding: 11px 14px;
+    font-size: 13px;
+    selection-background-color: #3978F6;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3978F6;
+}
+
+/* Все кнопки */
+QPushButton {
+    background-color: #242833;
+    color: #E5E7EB;
+    border: 1px solid #343A48;
+    border-radius: 9px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #303746;
+    border-color: #4B5568;
+}
+
+QPushButton:pressed {
+    background-color: #1B202B;
+}
+
+/* Кнопка сортировки */
+QPushButton#sort_button {
+    background-color: #3978F6;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 20px;
+}
+
+QPushButton#sort_button:hover {
+    background-color: #4D89FF;
+}
+
+QPushButton#sort_button:pressed {
+    background-color: #2863D5;
+}
+
+/* Кнопка выбора папки */
+QPushButton#select_button {
+    background-color: #252B38;
+    border: 1px solid #3978F6;
+    color: #78A5FF;
+}
+
+QPushButton#select_button:hover {
+    background-color: #303B50;
+}
+
+/* Полосы прокрутки */
+QScrollBar:vertical {
+    background: #171A21;
+    width: 8px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #414858;
+    border-radius: 4px;
+    min-height: 25px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #64748B;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
