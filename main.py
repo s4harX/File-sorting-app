@@ -153,10 +153,11 @@ class SorterWindow(QMainWindow, Ui_MainWindow):
             ".jar": "JARS",
         }
 
-        self.db_path = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), "history.db"
-        )
+        app_data = os.path.join(os.getenv("APPDATA"), "FileSorter")
 
+        os.makedirs(app_data, exist_ok=True)
+
+        self.db_path = os.path.join(app_data, "history.db")
         self.init_db()
 
         history_menu = self.menuBar().addMenu("History")
